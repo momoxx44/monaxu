@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>javascript</title>
+
+		<script>
+			var check = 0
+
+			var helloWorld = function() {
+				console.log("If the function runs this text will appear in the console!"); 
+				check++;
+				if (check < 4) {
+					alert("Hello World!");
+				} else if (check < 8) {
+					alert("Goodbye World!");
+				} else while (check < 10) {
+					alert("Kill Me.");
+				}
+			}
+
+			var test = 2;
+
+			var multiply = function(){
+				test = test * 2;
+				alert("Test's value is " + test);
+			}
+
+			var subtract = function(){
+				test -= 2;
+				alert("Test's value is " + test);
+			}
+
+			var divide = function(){
+				test = test / 2;
+				alert("Test's value is " + test);
+			}
+
+			var add = function(){
+				test += 2;
+				alert("Test's value is " + test);
+			}
+		</script>
+	</head>
+
+	<body>
+		<button type="button" onclick="helloWorld()">Hello World</button>
+
+		<br></br>
+
+		<button type="button" onclick="multiply()">Multiply 2</button>
+
+		<br></br>
+
+		<button type="button" onclick="subtract()">Subtract 2</button>
+
+		<br></br>
+
+		<button type="button" onclick="divide()">Divide 2</button>
+
+		<br></br>
+
+		<button type="button" onclick="add()">Add 2</button>
+	</body>
+</html>
