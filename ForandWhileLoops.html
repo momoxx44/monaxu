@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>For and While Loops</title>
+
+		<script>
+
+			var forBottles = function() {
+				for (var count = 100; count > -1; count--) {
+					if (count === 0) {
+						console.log("There are no more bottles of milk on the wall.");
+					} else {
+						console.log("There are " + count + " bottles of milk on the wall.");
+					}
+				}
+			}
+
+			var whileBottles = function() {
+				var count = 100
+				while (count > -1) {
+					if (count === 0) {
+						console.log("There are no more bottles of milk on the wall.");
+					} else {
+						console.log("There are " + count + " bottles of milk on the wall.");
+					}
+					count--;
+				}
+			}
+
+			var forHashtag = function() {
+				var out = ""; 
+				for (var count = 1; count < 8; count++) {
+					console.log(out);
+					out = out + "#";
+				}
+			}
+
+			var whileHashtag = function() {
+				var out = "";
+				var count = 1
+				while (count < 8) {
+					if (count === 1) {
+						console.log("#");
+					} else {
+						console.log(out);
+						out = out + "#";
+					}
+					count++;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<button type = "button" onclick = "forBottles()">For</button>
+
+		<br></br>
+
+		<button type = "button" onclick = "whileBottles()">While</button>
+	</body>
+</html>
